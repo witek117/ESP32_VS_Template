@@ -1,0 +1,47 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "prepare",
+            "type": "shell",
+            "command": "mkdir -p target/esp/build; mkdir -p target/x86/build"
+        },
+        {
+            "label": "Cmake ESP",
+            "type": "shell",
+            "command": "cd target/esp/build/; cmake .. -DPROJ=\"${workspaceFolderBasename}\" -G Ninja",
+        },
+        {
+            "label": "build ESP",
+            "type": "shell",
+            "command": "cd target/esp/build/; ninja",
+        },
+        {
+            "label": "flash ESP",
+            "type": "shell",
+            "command": "cd target/esp/build/; ninja flash"
+        },
+        {
+            "label": "monitor ESP",
+            "type": "shell",
+            "command": "cd target/esp/; gnome-terminal -- idf.py -p /dev/ttyUSB0 monitor"
+        },
+        {
+            "label": "menuconfig ESP",
+            "type": "shell",
+            "command": "cd target/esp/; gnome-terminal -- idf.py menuconfig"
+        },
+        {
+            "label": "Cmake x86",
+            "type": "shell",
+            "command": "cd target/x86/build/; cmake .. -DPROJ=\"${workspaceFolderBasename}\" ",
+        },
+        {
+            "label": "build x86",
+            "type": "shell",
+            "command":"cd target/x86/build/; make; gnome-terminal --geometry=200x60 -- ./${workspaceFolderBasename}",
+        }
+    ]
+}
