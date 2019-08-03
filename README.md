@@ -7,6 +7,7 @@ Open terminal and paste: <br />
 <br />
 In Visual Studio Code press Ctrl + Shift + P <br />
 Select **Tasks: Run Task** and **prepare**
+
 ![Tasks](https://github.com/witek117/ESP32_VS_Template/blob/master/img/tasks_list.png 
 
 VSCode will vreate folder **build** in esp and x86 directories. <br />
