@@ -1,1 +1,1 @@
-Help imahes
+Help images
