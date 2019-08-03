@@ -1,4 +1,4 @@
-# ESP32_VS_Template with C++
+# ESP32 VSCode Template with C++
 ESP-IDF V4.0 is required.
 Brefore using template follow this:
 * [Getting Started Guide for the ESP-IDF](https://github.com/espressif/esp-idf/)
