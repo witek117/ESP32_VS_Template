@@ -1,7 +1,7 @@
 # ESP32_VS_Template with C++
 ESP-IDF V4.0 is required.
 Brefore using template follow this:
-* [Getting Started Guide for the ESP-IDF version](https://github.com/espressif/esp-idf/)
+* [Getting Started Guide for the ESP-IDF](https://github.com/espressif/esp-idf/)
 # How to use it <br />
 Go to your folder, name of the direcory will be name of your project. <br />
 Open terminal and paste: <br />
